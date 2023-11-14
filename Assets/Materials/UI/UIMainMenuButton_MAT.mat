@@ -75,7 +75,7 @@ Material:
     - _Cut: 0.582
     - _CutOff: 0
     - _EnableExternalAlpha: 0
-    - _Fade: -0.101
+    - _Fade: 0.3
     - _NoiseStrength: 1
     - _SliceAmount: 0.368
     - _Stencil: 0
