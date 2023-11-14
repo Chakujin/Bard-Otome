@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UIButton_MAT
+  m_Name: UIMainMenuButton_MAT
   m_Shader: {fileID: -6465566751694194690, guid: fc62e06ae21d9eb4ebc9adc514253eb0, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -65,7 +65,7 @@ Material:
     - _BurnSize: 0.237
     - _ColorMask: 15
     - _EnableExternalAlpha: 0
-    - _Fade: 0.519
+    - _Fade: 1
     - _SliceAmount: 0.368
     - _Stencil: 0
     - _StencilComp: 8
@@ -76,4 +76,5 @@ Material:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Tilling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
