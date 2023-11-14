@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
 using DG.Tweening;
 
 public class ButtonScene : MonoBehaviour
