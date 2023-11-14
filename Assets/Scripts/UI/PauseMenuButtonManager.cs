@@ -20,11 +20,6 @@ public class PauseMenuButtonManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void Resume()
-    {
-        //Apagar pause
-    }
-
     public void Audio()
     {
         m_AudioCanvas.SetActive(true);

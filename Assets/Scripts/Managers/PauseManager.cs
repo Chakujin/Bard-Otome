@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
@@ -40,13 +41,13 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-    private void Resume()
+    public void Resume()
     {
         m_PauseCanvas.SetActive(false);
         GameIsPaused = false;
     }
 
-    private void Pause()
+    public void Pause()
     {
         m_PauseCanvas.SetActive(true);
         GameIsPaused = true;
