@@ -23,9 +23,9 @@ public class QuestionsSystem : MonoBehaviour
         QuestionUpdate();
     }
 
-    public void PressButton()
+    public void PressButton(GameObject obj)
     {
-
+        obj.GetComponent<ButtonUpdateSkill>().SkillUpdate();
     }
 
     private void QuestionUpdate()
@@ -39,8 +39,9 @@ public class QuestionsSystem : MonoBehaviour
             {
                 // Put the Answers Scriptable Object from the Question Scriptable Object to the buttons
                 m_AnswerButton[i].GetComponent<ButtonUpdateSkill>().answerObj = m_Questions[i_CurrentCuestion].Answers[i];
+                m_AnswerButton[i].GetComponentInChildren<TextMeshProUGUI>().text = m_Questions[i_CurrentCuestion].Answers[i].description;
             }
+            i_CurrentCuestion++;
         }
-        i_CurrentCuestion++;
     }
 }

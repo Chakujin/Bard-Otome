@@ -14,6 +14,7 @@ public class AnswersScriptableObject : ScriptableObject
 
     public void AddStats(GameManager gameManager)
     {
+        Debug.Log("Updated Skills");
         gameManager.Wisdom += Wisdom;
         gameManager.Inteligence += Inteligence;
         gameManager.Constitution += Constitution;

@@ -404,10 +404,10 @@ MonoBehaviour:
       - m_Target: {fileID: 90489625}
         m_TargetAssemblyTypeName: QuestionsSystem, Assembly-CSharp
         m_MethodName: PressButton
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 159571460}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1014,10 +1014,10 @@ MonoBehaviour:
       - m_Target: {fileID: 90489625}
         m_TargetAssemblyTypeName: QuestionsSystem, Assembly-CSharp
         m_MethodName: PressButton
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 536151701}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1817,10 +1817,10 @@ MonoBehaviour:
       - m_Target: {fileID: 90489625}
         m_TargetAssemblyTypeName: QuestionsSystem, Assembly-CSharp
         m_MethodName: PressButton
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1529889350}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2022,10 +2022,10 @@ MonoBehaviour:
       - m_Target: {fileID: 90489625}
         m_TargetAssemblyTypeName: QuestionsSystem, Assembly-CSharp
         m_MethodName: PressButton
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1601056495}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
