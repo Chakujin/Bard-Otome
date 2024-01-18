@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuestionsSystem : MonoBehaviour
 {
+    private DataPersistenceManager m_dataPersistenceManager;
     //UI
     [SerializeField] private Button[] m_AnswerButton;
 
@@ -18,6 +18,8 @@ public class QuestionsSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
+        m_dataPersistenceManager = GameObject.FindGameObjectWithTag("DataPersistence").GetComponent<DataPersistenceManager>();
+
         //Print Firts Question
         i_TotalCuestions = m_Questions.Length;
         QuestionUpdate();
@@ -42,6 +44,11 @@ public class QuestionsSystem : MonoBehaviour
                 m_AnswerButton[i].GetComponentInChildren<TextMeshProUGUI>().text = m_Questions[i_CurrentCuestion].Answers[i].description;
             }
             i_CurrentCuestion++;
+        }
+        else
+        {
+            m_dataPersistenceManager.SaveGame();
+            SceneManager.LoadScene("QuestSelect");
         }
     }
 }

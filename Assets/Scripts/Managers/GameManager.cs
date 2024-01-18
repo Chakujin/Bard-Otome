@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
         DontDestroyOnLoad(this);
     }
 
+    // THIS FUCTIONS ONLY NEED TO BE CALLED BY THE DataPersistenceManager
+    // ONLY USE TO ADD ALL DATA TO BE SAVED/LOADED
+    // IF YOU NEED SAVE/LOAD THE GAME USE DataPersistenceManager.LoadGame() or DataPersistenceManager.SaveGame()
     public void LoadData(GameData data)
     {
         this.playerName = data.playerName;
