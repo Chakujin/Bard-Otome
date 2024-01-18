@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/QuestSelect.unity
-    guid: fba8bf0c64bda1b4a83cd65a36b2c6f0
-  - enabled: 1
     path: Assets/Scenes/CreationCharacter.unity
     guid: 2f21f098289d4d246979ac24a0b97908
+  - enabled: 1
+    path: Assets/Scenes/QuestSelect.unity
+    guid: fba8bf0c64bda1b4a83cd65a36b2c6f0
   - enabled: 1
     path: Assets/Scenes/QuestScenes/QuestSlime.unity
     guid: 78da0eaa71227274b95d385206d766fa
