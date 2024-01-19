@@ -13,6 +13,8 @@ public class GameData
     public int Dexterity;
     public int Strength;
 
+    public List<QuestScriptableObject> Quest;
+
     // The values defined in this constructor will be the default values
     // The game starts with there's no data to Load
     public GameData()
@@ -24,5 +26,7 @@ public class GameData
         this.Charisma = 1;
         this.Dexterity = 1;
         this.Strength = 1;
+
+        this.Quest = null;
     }
 }

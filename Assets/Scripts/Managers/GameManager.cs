@@ -8,12 +8,15 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     //Stats
     public string playerName;
-    public int Wisdom;
-    public int Inteligence;
-    public int Constitution;
-    public int Charisma;
-    public int Dexterity;
-    public int Strength;
+    public int Wisdom = 1;
+    public int Inteligence = 1;
+    public int Constitution = 1;
+    public int Charisma = 1;
+    public int Dexterity = 1;
+    public int Strength = 1;
+
+    //Quest
+    public List<QuestScriptableObject> Quest;
 
     private void Awake() 
     {
@@ -40,6 +43,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
         this.Charisma = data.Charisma;
         this.Dexterity = data.Dexterity;
         this.Strength = data.Strength;
+
+        this.Quest = data.Quest;
     }
 
     public void SaveData(ref GameData data)
@@ -51,5 +56,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         data.Charisma = Charisma;
         data.Dexterity = Dexterity;
         data.Strength = Strength;
+
+        data.Quest = Quest;
     }
 }
