@@ -64,6 +64,7 @@ public class QuestManager : MonoBehaviour
     public void QuestButtonPressed(GameObject Button)
     {
         SceneAsset scene = Button.GetComponent<QuestButtonPlay>().myQuest.questLevel;
+        m_dataPersistenceManager.SaveGame();
         SceneManager.LoadScene(scene.name);
     }
 }
