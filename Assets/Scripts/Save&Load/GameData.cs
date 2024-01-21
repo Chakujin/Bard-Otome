@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
+    // Player things
     public string playerName;
     public int Wisdom;
     public int Inteligence;
@@ -13,7 +14,9 @@ public class GameData
     public int Dexterity;
     public int Strength;
 
+    // Others
     public List<QuestScriptableObject> Quest;
+    public Object currentScene;
 
     // The values defined in this constructor will be the default values
     // The game starts with there's no data to Load
@@ -28,5 +31,6 @@ public class GameData
         this.Strength = 1;
 
         this.Quest = null;
+        this.currentScene = null;
     }
 }

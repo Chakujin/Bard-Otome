@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4888026230190481954}
   - component: {fileID: 2203032620167152238}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 3771516134785621549}
   - component: {fileID: 8825927068534816502}
   - component: {fileID: 4121239109011478623}
+  - component: {fileID: 1466342772130868945}
   m_Layer: 5
   m_Name: QuestButton
   m_TagString: Untagged
@@ -256,4 +257,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8825927068534816502}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: QuestButtonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6880402398442984731}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1466342772130868945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6880402398442984731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7c602a77df3654c87f8ba1f3b28abc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myQuest: {fileID: 0}

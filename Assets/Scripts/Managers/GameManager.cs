@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     //Quest
     public List<QuestScriptableObject> Quest;
+    public Object currentScene;
 
     private void Awake() 
     {
@@ -44,7 +45,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
         this.Dexterity = data.Dexterity;
         this.Strength = data.Strength;
 
-        this.Quest = data.Quest;
+        //this.Quest = data.Quest;
+        this.currentScene = data.currentScene;
     }
 
     public void SaveData(ref GameData data)
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         data.Dexterity = Dexterity;
         data.Strength = Strength;
 
-        data.Quest = Quest;
+        //data.Quest = Quest;
+        data.currentScene = currentScene;
     }
 }
