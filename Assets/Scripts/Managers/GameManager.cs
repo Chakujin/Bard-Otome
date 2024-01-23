@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public List<QuestScriptableObject> Quest;
     public Object currentScene;
 
+    //Interaction
+    public bool haveInteraction = false;
+    public InteractionScriptableObject interaction;
+
     private void Awake() 
     {
         if(instance == null)
@@ -34,9 +38,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     // THIS FUCTIONS ONLY NEED TO BE CALLED BY THE DataPersistenceManager
     // ONLY USE TO ADD ALL DATA TO BE SAVED/LOADED
-    // IF YOU NEED SAVE/LOAD THE GAME USE DataPersistenceManager.LoadGame() or DataPersistenceManager.SaveGame()
+    // IF YOU NEED SAVE/LOAD ON THE GAME USE DataPersistenceManager.LoadGame() or DataPersistenceManager.SaveGame()
     public void LoadData(GameData data)
     {
+        //  ATTRIBUTES
         this.playerName = data.playerName;
         this.Wisdom = data.Wisdom;
         this.Inteligence = data.Inteligence;
@@ -45,12 +50,18 @@ public class GameManager : MonoBehaviour, IDataPersistence
         this.Dexterity = data.Dexterity;
         this.Strength = data.Strength;
 
+        // QUEST
         //this.Quest = data.Quest;
         this.currentScene = data.currentScene;
+
+        // INTERACTION
+        this.haveInteraction = data.haveInteraction;
+        this.interaction = data.interaction;
     }
 
     public void SaveData(ref GameData data)
     {
+        // ATTRIBUTES
         data.playerName = playerName;
         data.Wisdom = Wisdom;
         data.Inteligence = Inteligence;
@@ -59,7 +70,12 @@ public class GameManager : MonoBehaviour, IDataPersistence
         data.Dexterity = Dexterity;
         data.Strength = Strength;
 
+        // QUEST
         //data.Quest = Quest;
         data.currentScene = currentScene;
+
+        // INTERACTION
+        data.haveInteraction = haveInteraction;
+        data.interaction = interaction;
     }
 }
