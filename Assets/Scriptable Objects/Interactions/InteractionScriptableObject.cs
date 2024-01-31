@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "NewInteraction", menuName = "Interaction Scriptable Object")]
 public class InteractionScriptableObject : ScriptableObject

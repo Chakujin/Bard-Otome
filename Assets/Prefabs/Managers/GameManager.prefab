@@ -53,3 +53,6 @@ MonoBehaviour:
   Strength: 0
   Quest:
   - {fileID: 11400000, guid: 02d30e49fc6ba194ca1abcbe6e32c167, type: 2}
+  currentScene: {fileID: 0}
+  haveInteraction: 1
+  interaction: {fileID: 11400000, guid: 94985565169272343bcb62854062ddfe, type: 2}

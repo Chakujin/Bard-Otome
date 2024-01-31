@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 158e77d2d720a4b4cb3f1272b679f9ab, type: 3}
   m_Name: TutorialInteraction
   m_EditorClassIdentifier: 
-  interactionTexts: []
+  interactionTexts:
+  - TestBuenos
+  - TestDias
   canReply: 0
-  replys: []
+  characterInteraction: {fileID: 21300000, guid: 37d6630ba1d893b428ac48478a28b2b4, type: 3}
+  replys:
+  - test1
+  - test2
+  - test3
+  - test4
   nextInteraction: {fileID: 0}
